@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 스타일 우선 적용 순서. */
-
-/* base style 재구성 */
+/* base 스타일 재구성 */
 @layer base {
   button {
     @apply cursor-pointer;
@@ -87,12 +85,12 @@
     background-color: #1c180a;
   }
 }
-/* 
+
 body {
   background: theme('colors.slate.900');
 }
 
-@media screen(sm) {
+/* @media screen(sm) {
   body {
     background: theme('colors.slate.700');
   }

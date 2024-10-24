@@ -654,6 +654,10 @@ abbr[title] {
   gap: 1.5rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .self-center {
   align-self: center;
 }
@@ -694,6 +698,10 @@ abbr[title] {
   padding: 1rem;
 }
 
+.font-suit {
+  font-family: SUIT Variable, sans-serif;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -723,6 +731,11 @@ abbr[title] {
   color: rgb(8 145 178 / var(--tw-text-opacity));
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .no-underline {
   text-decoration-line: none;
 }
@@ -746,20 +759,21 @@ abbr[title] {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.text-pesto-300 {
+  color: #bbaf83;
+}
+
 .text-pesto-900 {
   color: #1c180a;
 }
 
-/* 스타일 우선 적용 순서. */
+/* base 스타일 재구성 */
 
-/* base style 재구성 */
-
-/* 
 body {
-  background: theme('colors.slate.900');
+  background: #0f172a;
 }
 
-@media screen(sm) {
+/* @media screen(sm) {
   body {
     background: theme('colors.slate.700');
   }
