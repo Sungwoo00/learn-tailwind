@@ -568,7 +568,7 @@ abbr[title] {
 }
 
 .button {
-  border-radius: 0.125rem;
+  border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
   padding-left: 1rem;
@@ -753,6 +753,29 @@ abbr[title] {
 /* 스타일 우선 적용 순서. */
 
 /* base style 재구성 */
+
+/* 
+body {
+  background: theme('colors.slate.900');
+}
+
+@media screen(sm) {
+  body {
+    background: theme('colors.slate.700');
+  }
+}
+
+@media screen(md) {
+  body {
+    background: theme('colors.slate.500');
+  }
+}
+
+@media screen(lg) {
+  body {
+    background: theme('colors.slate.200');
+  }
+} */
 
 /* 스타일 재사용 */
 
