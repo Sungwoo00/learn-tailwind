@@ -588,6 +588,14 @@ abbr[title] {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .order-1 {
   order: 1;
 }
@@ -635,12 +643,24 @@ abbr[title] {
   margin-right: 1rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .inline-block {
   display: inline-block;
 }
 
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-20 {
@@ -693,6 +713,16 @@ abbr[title] {
 
 .flex-grow {
   flex-grow: 1;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.appearance-none {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .flex-row-reverse {
@@ -780,6 +810,11 @@ abbr[title] {
   border-width: 1px;
 }
 
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
 .bg-emerald-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(16 185 129 / var(--tw-bg-opacity));
@@ -805,6 +840,39 @@ abbr[title] {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-violet-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(196 181 253 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'checkbox-circle-unchecked\.svg\'\)\] {
+  background-image: url('checkbox-circle-unchecked.svg');
+}
+
+.bg-\[url\(\/src\/assets\/icon\/checkbox-circle-unchecked\.svg\)\] {
+  background-image: url(/src/assets/icon/checkbox-circle-unchecked.svg);
+}
+
+.bg-\[url\(\/src\/assets\/icon\/checkbox-circle-checked\)\] {
+  background-image: url(/src/assets/icon/checkbox-circle-checked);
+}
+
+.bg-\[url\(\/src\/assets\/icon\/checkbox-circle-checked\.svg\)\] {
+  background-image: url(/src/assets/icon/checkbox-circle-checked.svg);
+}
+
+.bg-checkbox-unchecked {
+  background-image: url('/src/assets/icon/checkbox-circle-unchecked.svg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .fill-primary-300 {
   fill: #22be61;
 }
@@ -819,6 +887,18 @@ abbr[title] {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
+.pl-7 {
+  padding-left: 1.75rem;
 }
 
 .font-suit {
@@ -887,6 +967,11 @@ abbr[title] {
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1039,6 +1124,66 @@ body {
   }
 }
 
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:left-0::before {
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.before\:h-6::before {
+  content: var(--tw-content);
+  height: 1.5rem;
+}
+
+.before\:w-6::before {
+  content: var(--tw-content);
+  width: 1.5rem;
+}
+
+.before\:bg-\[url\(\'checkbox-circle-unchecked\.svg\'\)\]::before {
+  content: var(--tw-content);
+  background-image: url('checkbox-circle-unchecked.svg');
+}
+
+.before\:bg-cover::before {
+  content: var(--tw-content);
+  background-size: cover;
+}
+
+.before\:bg-center::before {
+  content: var(--tw-content);
+  background-position: center;
+}
+
+.before\:content-\[\'\'\]::before {
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.default\:bg-\[url\(\'checkbox-circle-unchecked\.svg\'\)\]:default {
+  background-image: url('checkbox-circle-unchecked.svg');
+}
+
+.default\:bg-\[url\(\'checkbox-circle-checked\.svg\'\)\]:default {
+  background-image: url('checkbox-circle-checked.svg');
+}
+
+.checked\:bg-\[url\(\'checkbox-circle-checked\.svg\'\)\]:checked {
+  background-image: url('checkbox-circle-checked.svg');
+}
+
+.default\:checked\:bg-\[url\(\'checkbox-circle-checked\.svg\'\)\]:checked:default {
+  background-image: url('checkbox-circle-checked.svg');
+}
+
+.default\:checked\:bg-\[url\(\'checkbox-checked\'\)\]:checked:default {
+  background-image: url('checkbox-checked');
+}
+
 .hover\:border-4:hover {
   border-width: 4px;
 }
@@ -1078,6 +1223,11 @@ body {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
+.focus\:ring-purple-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(168 85 247 / var(--tw-ring-opacity));
+}
+
 .active\:text-red-500:active {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
@@ -1100,6 +1250,19 @@ body {
 .group:hover .\*\:group-hover\:text-white > * {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.peer:checked ~ .peer-checked\:bg-\[url\(\/src\/assets\/icon\/checkbox-circle-checked\.svg\)\] {
+  background-image: url(/src/assets/icon/checkbox-circle-checked.svg);
+}
+
+.peer:checked ~ .peer-checked\:bg-checkbox-checked {
+  background-image: url('/src/assets/icon/checkbox-circle-checked.svg');
+}
+
+.peer:checked ~ .peer-checked\:before\:bg-\[url\(\'checkbox-circle-checked\.svg\'\)\]::before {
+  content: var(--tw-content);
+  background-image: url('checkbox-circle-checked.svg');
 }
 
 @media (min-width: 640px) {
